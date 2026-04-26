@@ -20,7 +20,6 @@ header.style.backgroundColor = 'green';
 header.style.borderBottom = '3px solid orange';
 
 const basketHeading = document.getElementById('basket-heading');
-basketHeading.style.border;
 basketHeading.style.color = 'green';
 
 const thanks = document.getElementById('thanks');
