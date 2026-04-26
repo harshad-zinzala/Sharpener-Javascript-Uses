@@ -24,3 +24,73 @@ basketHeading.style.color = 'green';
 
 const thanks = document.getElementById('thanks');
 thanks.innerHTML = '<p>Please visit us again</p>';
+
+
+// for loop
+
+const fruit = document.getElementsByClassName('fruit');
+fruit[2].style.backgroundColor = 'yellow';
+
+for (let i = 0; i < fruit.length; i++){
+    fruit[i].style.fontWeight = 'bold';
+}
+
+
+// New One
+const mainHeading = document.querySelector('#main-heading');
+mainHeading.style.textAlign = 'center';
+
+const fruits = document.querySelector('.fruits');
+fruits.style.backgroundColor = 'gray';
+fruits.style.padding = '30px';
+fruits.style.margin = '30px';
+fruits.style.width = '50%';
+fruits.style.borderRadius = '5px';
+fruits.style.listStyleType = 'none';
+
+const h2head = document.querySelector('h2');
+h2head.style.marginLeft = '30px';
+h2head.style.color = 'brown';
+
+const allFruit = document.querySelectorAll('.fruit');
+for (let i = 0; i < allFruit.length; i++){
+    allFruit[i].style.padding = '10px';
+    allFruit[i].style.margin = '10px';
+}
+
+// New One
+
+const oddFruit = document.querySelectorAll('.fruit:nth-child(odd)');
+for (let i = 0; i < oddFruit.length; i++){
+    oddFruit[i].style.backgroundColor = 'white';
+    oddFruit[i].style.borderRadius = '5px';
+}
+
+const evenFruit = document.querySelectorAll('.fruit:nth-child(even)');
+for (let i = 0; i < evenFruit.length; i++){
+    evenFruit[i].style.backgroundColor = 'brown';
+    evenFruit[i].style.color = 'white';
+    evenFruit[i].style.borderRadius = '5px';
+}
+
+// New One
+const h3Tag = document.createElement('h3');
+const head = document.createTextNode('Buy high quality');
+h3Tag.style.fontStyle='italic'
+h3Tag.appendChild(head);
+const divTag = document.querySelector('#header');
+divTag.appendChild(h3Tag);
+
+
+const pTag = document.createElement('p');
+const para = document.createTextNode('Total fruits: 4');
+pTag.appendChild(para);
+
+const divs = document.querySelectorAll('div');
+const secDiv = divs[1];
+secDiv.appendChild(pTag);
+
+const fruits = document.querySelector('.fruits');
+secDiv.insertBefore(pTag, fruits);
+
+pTag.id = 'fruits-total';
